@@ -1,0 +1,151 @@
+[
+    {
+        "id": 7,
+        "name": "Marketplace Whitelabel",
+        "description": "Projeto que criei para ser uma solução de vendas online seja no modelo ecommerce ou seja no marketplace. Deixei de uma forma que consegue se adaptar de acordo com o que o cliente precisar",
+        "tools": [
+            "React",
+            "Nextjs",
+            "Nodejs",
+            "PostgreSQL"
+        ],
+        "type": "Sites",
+        "url": "https://ecommerce-front-delta.vercel.app/",
+        "codeUrl": "",
+        "imgs": [
+            "/projects/whitelabel-marketplace-2.PNG",
+            "/projects/whitelabel-marketplace-3.PNG",
+            "/projects/whitelabel-marketplace-4.PNG",
+            "/projects/whitelabel-marketplace-5.PNG",
+            "/projects/whitelabel-marketplace-6.PNG",
+            "/projects/whitelabel-marketplace-1.PNG"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Izi Benefícios",
+        "description": "Entrei na Zeropay há pouco tempo e tive a oportunidade de alavancar um projeto novo onde se tem vários benefícios para seus clientes.<br />Estou como full-stack (fazendo o front-end e parte do back-end) e adorei o desafio que eu precisei enfrentar para deixar de forma organizada tanto o código quando o design, que deixou tudo bem fácil para os usuários :)<br />Alterar a tecnologia do projeto (React puro para Nextjs) para obter um melhor SEO foi ótimo, juntamente com fazer um onboarding customizado!",
+        "tools": [
+            "React",
+            "Nextjs",
+            "PWA",
+            "Push notifications",
+            "Redux"
+        ],
+        "type": "Sites",
+        "url": "https://whitelabel.zeropay.io",
+        "codeUrl": "",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-login-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-registro-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-ob1-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-ob2-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-ob4-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-ob5-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-login-desktop.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-home-desktop.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/izi-categoria-desktop.png"
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Ecommerce zero-veneno",
+        "description": "Ecommerce feito para a loja zeroveneno.<br />A dona da loja estava tendo muita demanda e já não dava mais para atender os seus clientes apenas pelo whatsapp, então eu preparei um ecommerce junto com a designer Carla Medeiros, incluindo um administrador para ela puder gerenciar tudo (produtos, pedidos, clientes, promoções...) :)",
+        "tools": [
+            "React",
+            "Nextjs",
+            "Nodejs",
+            "Nestjs",
+            "Amazon AWS",
+            "Redux"
+        ],
+        "type": "Sites",
+        "url": "https://zeroveneno.com.br",
+        "codeUrl": "",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-login-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-carrinho-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-inicio-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-menu-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-produt-mobile.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-carrinho-web.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-login-web.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-pesquisa-web.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-sobre-web.png"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Elosun",
+        "description": "Uma landing page para Elosun, onde fiz o designer e o código da parte visual do site (front-end).<br />O fiz utilizando uma nova ferramenta que o permite se comportar como um aplicativo (PWA).",
+        "tools": [
+            "React",
+            "PWA"
+        ],
+        "type": "Sites",
+        "url": "https://elosun.com.br",
+        "codeUrl": "",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/elosun-inicio-mobile.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/elosun-inicio.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/elosun-contato.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/elosun-faq.png"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Jogo Luna",
+        "description": "Um jogo de celular voltado para educação de crianças. Utilizado na apresentação de uma idéia em São Paulo.",
+        "tools": [
+            "React Native",
+            "Expo"
+        ],
+        "type": "Aplicativos",
+        "url": "",
+        "codeUrl": "https://github.com/lavesan/LunaGame",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/luna-apresentacao.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/luna-inicio.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/luna-primeira-fase.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/luna-segunda-fase.jpeg",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/luna-final.jpeg"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Meu portfólio",
+        "description": "Este portfólio que você está navegando. Eu o fiz com o intuito de mostrar meu trabalho e quem eu sou, ter um cartão de visitas online :). Fiz tanto o design quanto o código, aproveitando o projeto para utilizar animações e otimizando o SEO da página (O algoritmo do google recomenda o meu site de maneira mais fácil).",
+        "tools": [
+            "React",
+            "Nextjs",
+            "Redux",
+            "Framer motion"
+        ],
+        "type": "Sites",
+        "url": "",
+        "codeUrl": "https://github.com/lavesan/portfolio-2.0",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/portfolio-mobile.jpeg"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Movfit",
+        "description": "Um gympass para ser utilizado por funcionários de empresas. Eu fiz o design e a parte visual (front-end) juntamente com Marcel Souza :)",
+        "tools": [
+            "Vue.js",
+            "Quasar",
+            "Redux"
+        ],
+        "type": "Sites",
+        "url": "https://movfitness.com.br",
+        "codeUrl": "",
+        "imgs": [
+            "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-mobile-3.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-web-2.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-mobile-2.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-mobile-1.png",
+            "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-web-1.png"
+        ]
+    }
+]
