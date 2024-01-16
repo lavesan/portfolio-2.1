@@ -72,6 +72,7 @@ const ProjectModalComponent = ({
                 <p key={tool}>
                   <FontAwesomeIcon
                     className="technology-list--dot"
+                    // @ts-ignore
                     icon={faDotCircle}
                   />{" "}
                   {tool}
@@ -89,6 +90,7 @@ const ProjectModalComponent = ({
                 >
                   <FontAwesomeIcon
                     className="action-buttons--icon"
+                    // @ts-ignore
                     icon={faGithub}
                   />{" "}
                   Ver código

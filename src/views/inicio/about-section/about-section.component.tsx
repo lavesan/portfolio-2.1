@@ -8,7 +8,7 @@ import { ISection } from "../inicio.interfaces";
 import languages from "../../../../public/static/languages.json";
 const myImage = "/static/imgs/foto-portfolio.jpeg";
 
-export default ({
+const AboutSection = ({
   triggerAnimation,
   initialLeftStyle,
   initialRightStyle,
@@ -60,3 +60,5 @@ export default ({
     </StyledAboutSection>
   );
 };
+
+export default AboutSection;

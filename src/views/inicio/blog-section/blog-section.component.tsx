@@ -35,6 +35,7 @@ const BlogSectionComponent = ({
       {blogsJSON.map((blog, index) => (
         <motion.div
           key={blog.id}
+          // @ts-ignore
           initial={fromAnimation(index)}
           animate={triggerAnimation ? animationStyle : fromAnimation(index)}
           transition={animationTransition}

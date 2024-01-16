@@ -5,7 +5,7 @@ import { IBlogCard } from "./blog-card.interfaces";
 
 const mediumLogo = "/static/imgs/medium-logo.png";
 
-export default ({
+const BlogCard = ({
   title,
   briefText,
   href,
@@ -37,3 +37,5 @@ export default ({
     </StyledBlogCard>
   );
 };
+
+export default BlogCard;

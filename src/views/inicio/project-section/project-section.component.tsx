@@ -6,15 +6,12 @@ import { SlideShowComponent } from "../../../components/slide-show";
 import projectsJSON from "../../../../public/static/projects.json";
 import frameworksJSON from "../../../../public/static/frameworks.json";
 
-export default ({}: ISection) => {
+const ProjectSection = ({}: ISection) => {
   return (
     <StyledProjectSection>
-      {/* <motion.div
-                initial={initialStyle}
-                animate={triggerAnimation ? biggerStyle : initialStyle}
-                transition={duration}> */}
       <SlideShowComponent projects={projectsJSON} frameworks={frameworksJSON} />
-      {/* </motion.div> */}
     </StyledProjectSection>
   );
 };
+
+export default ProjectSection;

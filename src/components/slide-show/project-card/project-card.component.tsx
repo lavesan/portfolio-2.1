@@ -20,7 +20,7 @@ const ProjectCardComponent = ({
 
   const toggleModal = useCallback(() => {
     dispatch(toggleProjectModal(project));
-  }, []);
+  }, [dispatch, project]);
 
   return (
     <StyledProjectCard
@@ -32,6 +32,7 @@ const ProjectCardComponent = ({
       <div className={`project-filter ${selected && ""}`} />
       <FontAwesomeIcon
         className="project-clickable-icon"
+        // @ts-ignore
         icon={faHandPointDown}
         onTouchStart={onTouchStart}
       />

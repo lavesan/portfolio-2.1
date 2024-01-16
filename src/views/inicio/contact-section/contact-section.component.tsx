@@ -8,7 +8,7 @@ import { ISection } from "../inicio.interfaces";
 import { ContactCardComponent } from "../../../components/contact-card";
 import theme from "../../../application/app.theme";
 
-export default ({
+const ContactSection = ({
   triggerAnimation,
   initialLeftStyle,
   initialRightStyle,
@@ -62,3 +62,5 @@ export default ({
     </StyledContactSection>
   );
 };
+
+export default ContactSection;
