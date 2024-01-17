@@ -33,7 +33,7 @@
             "Redux"
         ],
         "type": "Sites",
-        "url": "https://whitelabel.zeropay.io",
+        "url": "",
         "codeUrl": "",
         "imgs": [
             "https://valderyportfolio.s3.amazonaws.com/projetos/izi-login-mobile.jpeg",
@@ -60,7 +60,7 @@
             "Redux"
         ],
         "type": "Sites",
-        "url": "https://zeroveneno.com.br",
+        "url": "https://zero-veneno-ecommerce.vercel.app/",
         "codeUrl": "",
         "imgs": [
             "https://valderyportfolio.s3.amazonaws.com/projetos/zero-veneno-login-mobile.jpeg",
@@ -138,7 +138,7 @@
             "Redux"
         ],
         "type": "Sites",
-        "url": "https://movfitness.com.br",
+        "url": "",
         "codeUrl": "",
         "imgs": [
             "https://valderyportfolio.s3.amazonaws.com/projetos/movfit-mobile-3.png",

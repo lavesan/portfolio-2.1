@@ -33,7 +33,7 @@ const Start = () => {
     setTitlesRef((f: any) => ({
       ...f,
       [refName]: node,
-    })); // e.g. change ref state to trigger re-render
+    }));
     if (!node) {
       // node is null, if DOM node of ref had been unmounted before
     } else {

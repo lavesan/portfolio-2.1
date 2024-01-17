@@ -33,6 +33,7 @@ const HomeSection = () => {
   return (
     <StyledHomeSection>
       {/* <InicioBackgroundAnimation /> */}
+      {/* <img src="/static/star fall_files/giphy.gif" /> */}
       <div style={{ height: 20 }}>
         <Typing
           onFinishedTyping={() => activateTypingAnimation(1)}
