@@ -42,7 +42,11 @@ export const StyledInicioPage = styled.section`
       height: 100vh;
       box-sizing: border-box;
       font-family: "Lora", serif;
+      background-color: #000;
       background-image: url("/static/starfall.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .submit-button {
