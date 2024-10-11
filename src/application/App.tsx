@@ -49,10 +49,12 @@ const App = ({
     >
       <GlobalStyle smoothScroll={smoothScroll} />
       <Head>
-      <!-- Meta Pixel Code -->
+        {/* @ts-ignore */}
       <script>
       !function(f,b,e,v,n,t,s)
+      {/* @ts-ignore */}
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      {/* @ts-ignore */}
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
       n.queue=[];t=b.createElement(e);t.async=!0;
@@ -61,6 +63,7 @@ const App = ({
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '503632712515712');
       fbq('track', 'PageView');
+      {/* @ts-ignore */}
       </script>
       <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=503632712515712&ev=PageView&noscript=1"
