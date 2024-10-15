@@ -75,10 +75,10 @@ const App = ({
         <title>Valdery - desenvolvedor de sites</title>
 
         {/* Start Meta Pixel Code */}
-        <script id="fb-pixel" src="/fb-pixel.js" />
+        {/* <script id="fb-pixel" src="/fb-pixel.js" />
         <noscript><img height="1" width="1" style="display:none"
         src="https://www.facebook.com/tr?id=503632712515712&ev=PageView&noscript=1"
-        /></noscript>
+        /></noscript> */}
         {/* End Meta Pixel Code */}
 
         {/* Google tag (gtag.js) */}
