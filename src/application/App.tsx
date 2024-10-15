@@ -82,7 +82,7 @@ const App = ({
         {/* End Meta Pixel Code */}
 
         {/* Google tag (gtag.js) */}
-        <script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=AW-16729447971" />
+        {/* <script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=AW-16729447971" />
         <script id="gtag-init">
           window.dataLayer = window.dataLayer || [];
           function gtag() {
@@ -91,7 +91,7 @@ const App = ({
           gtag("js", new Date());
 
           gtag('config', 'AW-16729447971');
-        </script>
+        </script> */}
         {/* End Google tag (gtag.js) */}
       </Head>
       <HeaderLayout>
