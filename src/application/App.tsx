@@ -11,7 +11,6 @@ import { setScreenSize } from "../store/actions/uiActions";
 // @ts-ignore
 const myIcon = "/static/imgs/close-tag.png";
 import theme from "./app.theme";
-import Script from "next/script";
 
 const mapStateToProps = (store: IReduxStates) => ({
   smoothScroll: store.uiState.smoothScroll,
@@ -74,26 +73,27 @@ const App = ({
         />
         <meta name="theme-color" content={theme.green.primary} />
         <title>Valdery - desenvolvedor de sites</title>
+
+        {/* Start Meta Pixel Code */}
+        <script id="fb-pixel" src="/fb-pixel.js" />
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=503632712515712&ev=PageView&noscript=1"
+        /></noscript>
+        {/* End Meta Pixel Code */}
+
+        {/* Google tag (gtag.js) */}
+        <script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=AW-16729447971" />
+        <script id="gtag-init">
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments)
+          }
+          gtag("js", new Date());
+
+          gtag('config', 'AW-16729447971');
+        </script>
+        {/* End Google tag (gtag.js) */}
       </Head>
-      {/* Start Meta Pixel Code */}
-      <Script id="fb-pixel" src="/fb-pixel.js" />
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=503632712515712&ev=PageView&noscript=1"
-      /></noscript>
-      {/* End Meta Pixel Code */}
-
-      {/* Google tag (gtag.js) */}
-      <Script id="gtag" async src="https://www.googletagmanager.com/gtag/js?id=AW-16729447971" />
-      <Script id="gtag-init">
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-          dataLayer.push(arguments)
-        }
-        gtag("js", new Date());
-
-        gtag('config', 'AW-16729447971');
-      </Script>
-      {/* End Google tag (gtag.js) */}
       <HeaderLayout>
         <Component {...pageProps} />
       </HeaderLayout>
