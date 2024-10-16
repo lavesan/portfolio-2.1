@@ -22,6 +22,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@next/third-parties": "^14.2.15",
     "@types/next": "^9.0.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",

@@ -2,6 +2,7 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps, useDispatch } from "react-redux";
 import Head from "next/head";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 import GlobalStyle from "./global-styles";
 import { HeaderLayout } from "../layouts/header";
@@ -24,6 +25,8 @@ const App = ({
   smoothScroll,
 }: IApp & ConnectedProps<typeof connector>) => {
   const dispatch = useDispatch();
+
+  const googleTagId = process.env.GOOGLE_TAG_ID;
 
   useEffect(() => {
     dispatch(
@@ -73,6 +76,10 @@ const App = ({
         />
         <meta name="theme-color" content={theme.green.primary} />
         <title>Valdery - desenvolvedor de sites</title>
+
+        <GoogleTagManager gtmId={googleTagId} />
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${googleTagId}`}
+          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
         {/* Start Meta Pixel Code */}
         {/* <script id="fb-pixel" src="/fb-pixel.js" />
