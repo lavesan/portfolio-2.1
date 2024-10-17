@@ -45,6 +45,8 @@ const App = ({
     });
   }, []);
 
+  console.log('Google Tag Id: ', googleTagId);
+
   return (
     <div
       style={{
