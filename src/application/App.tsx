@@ -54,6 +54,7 @@ const App = ({
       }}
     >
       <GlobalStyle smoothScroll={smoothScroll} />
+      <GoogleTagManager gtmId={googleTagId} />
       <Head>
         <meta
           name="viewport"
@@ -79,7 +80,6 @@ const App = ({
         <meta name="theme-color" content={theme.green.primary} />
         <title>Valdery - desenvolvedor de sites</title>
 
-        <GoogleTagManager gtmId={googleTagId} />
         <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${googleTagId}`}
           height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
 
