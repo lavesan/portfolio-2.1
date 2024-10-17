@@ -7,6 +7,7 @@ import { StyledContactSection } from "./contact-section.styles";
 import { ISection } from "../inicio.interfaces";
 import { ContactCardComponent } from "../../../components/contact-card";
 import theme from "../../../application/app.theme";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const ContactSection = ({
   triggerAnimation,
@@ -49,12 +50,18 @@ const ContactSection = ({
             href="https://wa.me/5581985405144"
             // text="(81) 98540-5144"
             icon={faWhatsapp}
+            onClick={() => {
+              sendGTMEvent('Compra');
+            }}
             backgroundColor={theme.brands.whatsapp}
           />
           <ContactCardComponent
             href="mailto:valdery.jur@gmail.com"
             // text="valdery.jur@gmail.com"
             icon={faEnvelope}
+            onClick={() => {
+              sendGTMEvent('Compra');
+            }}
             backgroundColor={theme.brands.gmail}
           />
         </div>
