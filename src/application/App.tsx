@@ -26,7 +26,7 @@ const App = ({
 }: IApp & ConnectedProps<typeof connector>) => {
   const dispatch = useDispatch();
 
-  const googleTagId = process.env.GOOGLE_TAG_ID;
+  const googleTagId = process.env.NEXT_PUBLIC_GOOGLE_TAG_ID;
 
   useEffect(() => {
     dispatch(
