@@ -52,8 +52,15 @@ const ContactSection = ({
             icon={faWhatsapp}
             onClick={() => {
               // @ts-ignore
-              gtag('event', 'conversion', {
-                'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
+              // gtag('event', 'conversion', {
+              //   'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
+              //   'value': 1.0,
+              //   'currency': 'BRL',
+              //   'transaction_id': ''
+              // });
+              sendGTMEvent({
+                event: 'Compra',
+                // 'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
                 'value': 1.0,
                 'currency': 'BRL',
                 'transaction_id': ''
@@ -67,18 +74,19 @@ const ContactSection = ({
             icon={faEnvelope}
             onClick={() => {
               // @ts-ignore
-              gtag('event', 'conversion', {
-                'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
-                'value': 1.0,
-                'currency': 'BRL',
-                'transaction_id': ''
-              });
-              // sendGTMEvent({
+              // gtag('event', 'conversion', {
               //   'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
               //   'value': 1.0,
               //   'currency': 'BRL',
               //   'transaction_id': ''
               // });
+              sendGTMEvent({
+                event: 'Compra',
+                // 'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
+                'value': 1.0,
+                'currency': 'BRL',
+                'transaction_id': ''
+              });
             }}
             backgroundColor={theme.brands.gmail}
           />
