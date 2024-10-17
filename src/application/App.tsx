@@ -75,9 +75,6 @@ const App = ({
         <meta name="theme-color" content={theme.green.primary} />
         <title>Valdery - desenvolvedor de sites</title>
 
-        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${googleTagId}`}
-          height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
-
         {/* Start Meta Pixel Code */}
         {/* <script id="fb-pixel" src="/fb-pixel.js" />
         <noscript><img height="1" width="1" style="display:none"
