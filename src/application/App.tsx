@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps, useDispatch } from "react-redux";
 import Head from "next/head";
-import { GoogleTagManager } from '@next/third-parties/google';
 
 import GlobalStyle from "./global-styles";
 import { HeaderLayout } from "../layouts/header";
@@ -27,8 +26,6 @@ const App = ({
 }: IApp & ConnectedProps<typeof connector>) => {
   const dispatch = useDispatch();
 
-  const googleTagId = process.env.NEXT_PUBLIC_GOOGLE_TAG_ID;
-
   useEffect(() => {
     dispatch(
       setScreenSize({
@@ -46,8 +43,6 @@ const App = ({
     });
   }, []);
 
-  console.log('Google Tag Id: ', googleTagId);
-
   return (
     <div
       style={{
@@ -55,7 +50,6 @@ const App = ({
       }}
     >
       <GlobalStyle smoothScroll={smoothScroll} />
-      {/* <GoogleTagManager gtmId={googleTagId} /> */}
       <Head>
         <meta
           name="viewport"
@@ -104,7 +98,7 @@ const App = ({
         </script> */}
         {/* End Google tag (gtag.js) */}
       </Head>
-      <Script id="gtm" strategy="afterInteractive">
+      {/* <Script id="gtm" strategy="afterInteractive">
         {`
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -112,12 +106,7 @@ const App = ({
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','${googleTagId}');
         `}
-      </Script>
-      <noscript
-        dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${googleTagId}" height="0" width="0" style="display: none; visibility: hidden;" />`,
-        }}
-      />
+      </Script> */}
       <HeaderLayout>
         <Component {...pageProps} />
       </HeaderLayout>
