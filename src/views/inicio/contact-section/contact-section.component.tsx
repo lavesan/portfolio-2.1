@@ -51,7 +51,8 @@ const ContactSection = ({
             // text="(81) 98540-5144"
             icon={faWhatsapp}
             onClick={() => {
-              sendGTMEvent({
+              // @ts-ignore
+              gtag('event', 'conversion', {
                 'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
                 'value': 1.0,
                 'currency': 'BRL',
@@ -65,12 +66,19 @@ const ContactSection = ({
             // text="valdery.jur@gmail.com"
             icon={faEnvelope}
             onClick={() => {
-              sendGTMEvent({
+              // @ts-ignore
+              gtag('event', 'conversion', {
                 'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
                 'value': 1.0,
                 'currency': 'BRL',
                 'transaction_id': ''
               });
+              // sendGTMEvent({
+              //   'send_to': 'AW-16729447971/BzCqCP3tt94ZEKO8nKk-',
+              //   'value': 1.0,
+              //   'currency': 'BRL',
+              //   'transaction_id': ''
+              // });
             }}
             backgroundColor={theme.brands.gmail}
           />

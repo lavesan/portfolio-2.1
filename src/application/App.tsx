@@ -12,6 +12,7 @@ import { setScreenSize } from "../store/actions/uiActions";
 // @ts-ignore
 const myIcon = "/static/imgs/close-tag.png";
 import theme from "./app.theme";
+import Script from "next/script";
 
 const mapStateToProps = (store: IReduxStates) => ({
   smoothScroll: store.uiState.smoothScroll,
@@ -54,7 +55,7 @@ const App = ({
       }}
     >
       <GlobalStyle smoothScroll={smoothScroll} />
-      <GoogleTagManager gtmId={googleTagId} />
+      {/* <GoogleTagManager gtmId={googleTagId} /> */}
       <Head>
         <meta
           name="viewport"
@@ -103,6 +104,20 @@ const App = ({
         </script> */}
         {/* End Google tag (gtag.js) */}
       </Head>
+      <Script id="gtm" strategy="afterInteractive">
+        {`
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','${googleTagId}');
+        `}
+      </Script>
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=${googleTagId}" height="0" width="0" style="display: none; visibility: hidden;" />`,
+        }}
+      />
       <HeaderLayout>
         <Component {...pageProps} />
       </HeaderLayout>
